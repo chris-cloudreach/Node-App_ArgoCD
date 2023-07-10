@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: busyboxnodeapp
+  name: busyboxnodeapp_new
 spec:
-  replicas: 1
+  replicas: 10
   selector:
     matchLabels:
       app: busybox
@@ -17,4 +17,4 @@ spec:
         image: busybox
         command:
         - sleep
-        - "3600"
+        - "7200"
